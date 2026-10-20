@@ -20,9 +20,9 @@
       <span>DEEP IN DUNGEON<small>PRZEWODNIK WĘDROWCA</small></span>
     </a>
     <nav aria-label="Główne sekcje">
-      <a href="#o-grze">O grze</a><a href="#przedmioty">Przedmioty</a><a href="#bestiariusz">Bestiariusz</a><a href="#historia">Historia wersji</a>
+      <a href="#zagraj">Zagraj</a><a href="#o-grze">O grze</a><a href="#przedmioty">Przedmioty</a><a href="#bestiariusz">Bestiariusz</a><a href="#historia">Historia wersji</a>
     </nav>
-    <span class="header-version"><span class="status-dot"></span><span>Prototyp <span data-current-version>0.28</span></span></span>
+    <span class="header-version"><span class="status-dot"></span><span>Prototyp <span data-current-version>0.29</span></span></span>
   </header>
 
   <main id="main">
@@ -33,15 +33,27 @@
         <h1 id="hero-title">Zanim zejdziesz<br>jeszcze <em>głębiej.</em></h1>
         <p class="hero-description">Każde piętro to nowa niewiadoma.<br>Każdy przedmiot — inny sposób na przetrwanie.</p>
         <p class="hero-subtitle">Poznaj lochy Deep in Dungeon: wyposażenie, które buduje twoją talię, przeciwników na drodze i historię powstawania gry.</p>
-        <div class="hero-actions"><a class="button button-gold" href="#przedmioty">Odkryj ekwipunek <span aria-hidden="true">↗</span></a><a class="text-link" href="#o-grze">Poznaj zasady <span aria-hidden="true">→</span></a></div>
+        <div class="hero-actions"><a class="button button-gold" href="#przedmioty">Odkryj ekwipunek <span aria-hidden="true">↗</span></a><a class="text-link" href="#o-grze">Poznaj zasady <span aria-hidden="true">→</span></a><a class="text-link" href="#zagraj">Zagraj na Androidzie <span aria-hidden="true">↓</span></a></div>
         <p class="hero-footnote"><span class="status-dot"></span> Bez pośpiechu. Offline. We własnym tempie.</p>
       </div>
       <div class="hero-caption" aria-hidden="true"><span>01 / WYPRAWA W NIEZNANE</span><span>GŁĘBOKOŚĆ NIE MA KOŃCA</span></div>
     </section>
 
     <div class="facts page-width" aria-label="Gra w liczbach">
-      <div><strong>25</strong><span>przedmiotów w grze</span></div><div><strong>6</strong><span>maks. kart w ręce gracza</span></div><div><strong>8</strong><span>osób w drużynie, łącznie z tobą</span></div><div><strong data-release-count>26</strong><span>udokumentowane wersje</span></div>
+      <div><strong>25</strong><span>przedmiotów w grze</span></div><div><strong>6</strong><span>maks. kart w ręce gracza</span></div><div><strong>8</strong><span>osób w drużynie, łącznie z tobą</span></div><div><strong data-release-count>27</strong><span>udokumentowane wersje</span></div>
     </div>
+
+    <section class="section page-width play-section" id="zagraj" aria-labelledby="play-title">
+      <div class="play-intro"><p class="eyebrow">ZAGRAJ / ANDROID</p><h2 id="play-title">Twój pierwszy krok<br>w głąb lochu.</h2><p>Pobierz aktualny prototyp Deep in Dungeon na telefon. Wyprawa działa offline, a postęp zapisuje się na urządzeniu.</p></div>
+      <div class="download-panel">
+        <p class="eyebrow">AKTUALNE WYDANIE · <span data-download-version></span></p>
+        <a class="button button-gold" id="apk-download" href="https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view" target="_blank" rel="noopener" aria-describedby="apk-requirements apk-size">Pobierz APK</a>
+        <p class="download-meta"><span id="apk-requirements"></span><span aria-hidden="true">·</span><span id="apk-size"></span></p>
+        <p class="download-file" id="apk-file-name"></p>
+        <ol class="install-steps"><li>Na Dysku wybierz „Pobierz”, a na ekranie skanowania „Pobierz mimo to”. Następnie otwórz zapisany plik APK na telefonie.</li><li>Jeśli Android zapyta, zezwól przeglądarce lub menedżerowi plików na instalację tej aplikacji.</li></ol>
+        <p class="download-note">Aktualizuj grę bez odinstalowania poprzedniej wersji, aby zachować zapis.</p>
+      </div>
+    </section>
 
     <section class="section page-width" id="o-grze" aria-labelledby="about-title">
       <div class="section-heading"><div><p class="eyebrow">01 / O GRZE</p><h2 id="about-title">Mała talia.<br>Wielkie decyzje.</h2></div><p>Wyruszasz z drewnianym nożem. Odkrywasz losowane piętra, zbierasz sprzęt i szukasz drogi w dół. To, co założysz, określa karty, którymi walczysz.</p></div>
@@ -53,6 +65,7 @@
       </div>
       <p>Gdy nie masz jeszcze zapisanego imienia, gra pyta: „Podaj imię swojego nieszczęśnika”. Wybierz od 1 do 24 znaków, z polskimi literami i spacjami. Imię pozostaje po zamknięciu gry; zmienisz je przez Opcje → Zmień nazwę postaci. Zmiana obejmuje bieżącą i kolejne próby, bez resetowania postępu i historii.</p>
       <p>Podłogi i ściany mają teraz 60 nowych grafik: po sześć wariantów czterech rodzajów podłóg i sześciu kształtów murów. Wygląd danego rodzaju kafelka pozostaje stały podczas marszu i po wczytaniu. Zobaczysz go także w rozpoczętej próbie, bez zmiany układu lochu.</p>
+      <p>Od 0.29 ściany są dobierane według rzeczywistego brzegu pokoju: proste odcinki nie zamieniają się w serię połączeń T. Poprawka obejmuje także widok bez mgły i bufor ruchu, bez resetowania wyprawy.</p>
       <div class="journey"><span class="journey-label">RYTM WYPRAWY</span><p>Odkrywaj <b>→</b> Walcz <b>→</b> Zbieraj <b>→</b> Zmieniaj talię <b>→</b> Schodź głębiej</p><small>Pokonaj bossa, odsłoń schody i zdecyduj o zejściu. Śmierć kończy próbę, zwykłe zamknięcie pozwala kontynuować zapis. Zapis następuje po ukończonych akcjach i trasach; nagłe ubicie procesu może cofnąć niedokończony marsz. Nowe zasady eksploracji od 0.26 działają na nowych próbach i kolejnych generowanych piętrach.</small></div>
     </section>
 
@@ -81,14 +94,14 @@
 
     <section class="history-section section" id="historia" aria-labelledby="history-title">
       <div class="page-width history-layout">
-        <div class="history-intro"><p class="eyebrow">04 / HISTORIA WERSJI</p><h2 id="history-title">Loch nie powstał<br>w jeden dzień.</h2><p>Od pierwszej wymiany broni do kolejnych pięter i pełnej drużyny. Rozwiń wersję, aby poznać jej zmiany.</p><div class="current-release"><span class="status-dot"></span><span>AKTUALNA WERSJA<strong data-current-version>0.28</strong><small data-current-date>20 października 2026</small></span></div><p class="history-help">Możesz rozwinąć kilka wersji jednocześnie i porównać ich szczegóły.</p></div>
+        <div class="history-intro"><p class="eyebrow">04 / HISTORIA WERSJI</p><h2 id="history-title">Loch nie powstał<br>w jeden dzień.</h2><p>Od pierwszej wymiany broni do kolejnych pięter i pełnej drużyny. Rozwiń wersję, aby poznać jej zmiany.</p><div class="current-release"><span class="status-dot"></span><span>AKTUALNA WERSJA<strong data-current-version>0.29</strong><small data-current-date>20 października 2026</small></span></div><p class="history-help">Możesz rozwinąć kilka wersji jednocześnie i porównać ich szczegóły.</p></div>
         <div id="releases" class="releases"></div>
       </div>
     </section>
-    <noscript><p class="noscript page-width">Katalogi i historia wymagają włączonego JavaScript. Włącz go w przeglądarce i otwórz stronę ponownie. Strona korzysta wyłącznie z lokalnych plików.</p></noscript>
+    <noscript><p class="noscript page-width">Katalogi i historia wymagają włączonego JavaScript. Włącz go w przeglądarce i otwórz stronę ponownie. Link do pobrania APK działa również bez JavaScript.</p></noscript>
   </main>
 
-  <footer class="site-footer page-width"><div class="footer-title">DEEP IN DUNGEON<span>Jeszcze jedno piętro.</span></div><div><p>Przewodnik po wersji <span data-current-version>0.28</span> · <span data-current-date>20 października 2026</span></p><p>Android · Gra offline · Prototyp w rozwoju</p></div><a class="text-link" href="#start">Wróć na górę ↑</a></footer>
+  <footer class="site-footer page-width"><div class="footer-title">DEEP IN DUNGEON<span>Jeszcze jedno piętro.</span></div><div><p>Przewodnik po wersji <span data-current-version>0.29</span> · <span data-current-date>20 października 2026</span></p><p>Android · Gra offline · Prototyp w rozwoju</p></div><a class="text-link" href="#start">Wróć na górę ↑</a></footer>
 
   <dialog id="entry-dialog" aria-labelledby="dialog-title">
     <div class="dialog-toolbar"><span class="eyebrow">KSIĘGA LOCHÓW / SZCZEGÓŁY</span><button type="button" id="close-dialog" class="close-button" aria-label="Zamknij szczegóły">✕</button></div>

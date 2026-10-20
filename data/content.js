@@ -2,8 +2,17 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.28",
+    "version": "0.29",
     "updated": "2026-10-20"
+  },
+  "download": {
+    "version": "0.29",
+    "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
+    "fileName": "DeepInDungeon-0.29-arm64-public.apk",
+    "sizeBytes": 51321582,
+    "sha256": "329db59ed556b8851ac0e59b231678d9cf052bf164e717bc63631942354e80fb",
+    "androidMinimum": "7.0",
+    "architecture": "arm64-v8a"
   },
   "items": [
     {
@@ -1777,6 +1786,36 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.29",
+      "date": "2026-10-20",
+      "title": "Mury trzymają kierunek",
+      "groups": [
+        {
+          "label": "Poprawione przypisanie ścian",
+          "changes": [
+            "Skała za krawędzią pokoju nie jest już traktowana jako dodatkowa odnoga muru. Proste brzegi sal i korytarzy używają odcinków poziomych lub pionowych zamiast powtarzanych kafelków T.",
+            "Rzeczywiste trójramienne połączenia nadal używają T; narożniki zachowują odpowiednie obroty. Rozpoznawanie korzysta z faktycznych brzegów skały przy znanej podłodze.",
+            "Dobór kształtu uwzględnia wyłączenie mgły także w buforze marszu. Przy włączonej mgle nie korzysta z ukrytej geometrii, a odkrycie otoczenia odświeża istniejące kafelki."
+          ]
+        },
+        {
+          "label": "Bez resetowania wyprawy",
+          "changes": [
+            "Poprawka działa również w trwającej próbie. Nie zmienia układu lochu, przejść, ruchu, losowań ani formatu zapisu.",
+            "Pozostaje ta sama pula 60 tekstur. Nie zmieniono samych obrazów, podłóg, schodów, przedmiotów ani postaci."
+          ]
+        },
+        {
+          "label": "Sprawdzenie",
+          "changes": [
+            "Błąd odtworzono na zasobach 0.28 i porównano ten sam kontrolowany układ przed oraz po poprawce. Przeszły celowane testy i zwykły renderer komputera.",
+            "Test fizycznego telefonu pozostaje niewykonany. Korekta przypisania nie jest przebudową grafik ani gwarancją idealnego połączenia pikseli wszystkich kształtów."
+          ]
+        }
+      ],
+      "note": "Naprawa doboru ścian, bez nowej próby i bez przeliczania mapy."
+    },
     {
       "version": "0.28",
       "date": "2026-10-20",

@@ -7,6 +7,16 @@
   document.querySelectorAll('[data-current-date]').forEach(node=>{node.textContent=formatDate(data.meta.updated);});
   const {filterEntries} = globalThis.DungeonCatalogue;
   const $ = id => document.getElementById(id);
+  if(data.download){
+    const download=data.download;
+    const button=$('apk-download');
+    button.href=download.url;
+    button.textContent=`Pobierz APK ${download.version}`;
+    document.querySelectorAll('[data-download-version]').forEach(node=>{node.textContent=download.version;});
+    $('apk-size').textContent=`${new Intl.NumberFormat('pl-PL',{maximumFractionDigits:1}).format(download.sizeBytes/1000000)} MB`;
+    $('apk-requirements').textContent=`Android ${download.androidMinimum}+ · ${download.architecture==='arm64-v8a'?'ARM64':download.architecture}`;
+    $('apk-file-name').textContent=download.fileName;
+  }
   const labels = {weapon:'Broń',armor:'Ochrona',artifact:'Artefakt',consumable:'Przedmiot użytkowy',enemy:'Przeciwnik',boss:'Boss piętra'};
   const symbols = {weapon:'⚔',armor:'⛨',artifact:'✦',consumable:'♧',enemy:'♙',boss:'♛'};
   const slots = {weapon:'Broń',head:'Głowa',torso:'Tułów',gloves:'Dłonie',legs:'Nogi',boots:'Stopy',offhand:'Druga ręka',artifact:'Artefakt'};
