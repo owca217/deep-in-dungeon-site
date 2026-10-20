@@ -2,7 +2,7 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.27",
+    "version": "0.28",
     "updated": "2026-10-20"
   },
   "items": [
@@ -1777,6 +1777,36 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.28",
+      "date": "2026-10-20",
+      "title": "Więcej twarzy lochu",
+      "groups": [
+        {
+          "label": "Nowy wygląd podłóg i ścian",
+          "changes": [
+            "Mapa korzysta z 60 nowych grafik: czterech rodzajów podłóg i sześciu kształtów ścian, po sześć wariantów każdego rodzaju.",
+            "Podłogi i ściany czerpią wyłącznie z nowej, spójnej puli. Dawne grafiki pozostają w projekcie, ale mapa ich nie wybiera.",
+            "Wariant danego rodzaju kafelka jest stały dla tego samego piętra i pola. Marsz, zawracanie i wczytanie nie losują go ponownie; wybór wyglądu nie zużywa losowania walki, łupów ani posiłków."
+          ]
+        },
+        {
+          "label": "Kontynuacja wyprawy",
+          "changes": [
+            "Nowy wygląd zobaczysz także po wybraniu Kontynuuj. Układ rozpoczętego piętra, postęp, historia i rekord pozostają zachowane, bez migracji formatu zapisu 6.",
+            "Schody, skrzynie, worki łupu, bohater i pozostałe postacie zachowują dotychczasowe grafiki. Widok 11 × 11, ramka i tempo marszu 0,30 s pozostają bez zmian.",
+            "Pula grafik jest ładowana przed pierwszym ruchem; zachowano pamięć podręczną i ponowne używanie kafelków podczas marszu."
+          ]
+        },
+        {
+          "label": "Sprawdzenie",
+          "changes": [
+            "Przeszły celowane testy wyboru wariantów, ruchu i zapisu oraz sprawdzenie zwykłego renderera na komputerze. Test na fizycznym telefonie pozostaje niewykonany; nie potwierdzono płynności Androida."
+          ]
+        }
+      ],
+      "note": "Aktualizacja wyglądu podłóg i ścian. Nie wymaga nowej próby ani przeliczania geometrii lochu."
+    },
     {
       "version": "0.27",
       "date": "2026-10-20",
