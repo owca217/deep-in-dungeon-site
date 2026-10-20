@@ -3,7 +3,7 @@ globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
     "version": "0.31",
-    "updated": "2026-10-20"
+    "updated": "2026-10-21"
   },
   "download": {
     "version": "0.31",
@@ -1811,6 +1811,14 @@ globalThis.DUNGEON_DATA = {
           "label": "Ograniczenia",
           "changes": [
             "Test na fizycznym telefonie pozostaje niewykonany. Nie potwierdzono płynności Androida ani idealnego połączenia pikseli wszystkich wygenerowanych wariantów."
+          ]
+        },
+        {
+          "label": "Wersja przeglądarkowa — 21 października 2026",
+          "changes": [
+            "Zakładka Zagraj pozwala uruchomić prototyp 0.31 w przeglądarce albo pobrać APK na Androida.",
+            "Wersja Web ma pionowy widok, lokalny zapis w przeglądarce oraz przycisk Zapisz i wróć. Zapis jest niezależny od aplikacji Android.",
+            "Reguły walki, lochy i wyposażenie pochodzą z tego samego projektu. Fizyczny telefon w przeglądarce pozostaje nieprzetestowany."
           ]
         }
       ],

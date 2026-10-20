@@ -11,7 +11,7 @@
     const download=data.download;
     const button=$('apk-download');
     button.href=download.url;
-    button.textContent=`Pobierz APK ${download.version}`;
+    button.textContent=`Pobierz APK ${download.version} na Androida`;
     document.querySelectorAll('[data-download-version]').forEach(node=>{node.textContent=download.version;});
     $('apk-size').textContent=`${new Intl.NumberFormat('pl-PL',{maximumFractionDigits:1}).format(download.sizeBytes/1000000)} MB`;
     $('apk-requirements').textContent=`Android ${download.androidMinimum}+ · ${download.architecture==='arm64-v8a'?'ARM64':download.architecture}`;
