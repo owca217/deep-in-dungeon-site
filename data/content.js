@@ -2,7 +2,7 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.26",
+    "version": "0.27",
     "updated": "2026-10-20"
   },
   "items": [
@@ -1777,6 +1777,35 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.27",
+      "date": "2026-10-20",
+      "title": "Imię twojego nieszczęśnika",
+      "groups": [
+        {
+          "label": "Własne imię",
+          "changes": [
+            "Gdy imię nie jest jeszcze zapisane, nad menu pojawia się pytanie „Podaj imię swojego nieszczęśnika”. Dotyczy to również pierwszego uruchomienia po aktualizacji.",
+            "Imię ma od 1 do 24 znaków po przycięciu skrajnych spacji. Można używać polskich liter i spacji; zapisane imię pozostaje po zamknięciu aplikacji."
+          ]
+        },
+        {
+          "label": "Zmiana podczas wyprawy",
+          "changes": [
+            "W menu wybierz Opcje → Zmień nazwę postaci, aby edytować obecne imię. Anulowanie pozostawia poprzednią nazwę.",
+            "Nowe imię obowiązuje w bieżącej próbie, także podczas rozpoczętej walki, oraz w kolejnych próbach. Nie resetuje postępu, historii ani rekordu i nie losuje ponownie ręki kart.",
+            "Imię jest widoczne przy zdrowiu bohatera, w drużynie i nowych wpisach walki. Starsze wpisy dziennika pozostają zachowane; długie imię jest skracane przy HP, a pełną nazwę zawiera podpowiedź."
+          ]
+        },
+        {
+          "label": "Sprawdzenie",
+          "changes": [
+            "Sprawdzono zapis imienia, błędy zapisu, wznowienie i zmianę podczas walki oraz układ na komputerze. Test na fizycznym telefonie, w tym z jego klawiaturą ekranową, pozostaje niewykonany."
+          ]
+        }
+      ],
+      "note": "Imię jest trwałym ustawieniem postaci. Rozpoczęta próba, historia, rekord i dotychczasowy format zapisu pozostają zachowane."
+    },
     {
       "version": "0.26",
       "date": "2026-10-20",
