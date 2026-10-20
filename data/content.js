@@ -2,7 +2,7 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.25",
+    "version": "0.26",
     "updated": "2026-10-20"
   },
   "items": [
@@ -1483,7 +1483,7 @@ globalThis.DUNGEON_DATA = {
       "name": "Przeciwnik",
       "status": "implemented",
       "category": "enemy",
-      "description": "Podstawowy przeciwnik generowanych lochów. Walczy w grupach, których liczba rośnie wraz z głębokością.",
+      "description": "Podstawowy przeciwnik generowanych lochów. Walczy w grupach rosnących wraz z głębokością. Na nowych piętrach może rozpocząć starcie przez aggro albo dołączyć do mapy jako posiłek.",
       "image": "assets/pixel/enemy_guard.png",
       "stats": [
         {
@@ -1513,7 +1513,7 @@ globalThis.DUNGEON_DATA = {
           "effect": "Jedno działanie w fazie NPC. Trafienie uwzględnia KP celu i różnicę poziomów."
         }
       ],
-      "occurrence": "2 wrogów na piętrach 1–2, 3 na 3–4, potem co dwa piętra o jednego więcej, do 8.",
+      "occurrence": "W jednej grupie: 2 wrogów na piętrach 1–2, 3 na 3–4, potem co dwa piętra o jednego więcej, do 8. Na nowych piętrach od 0.26 początkowa liczba ikon spotkań (z bossem) wynosi 4 + 6 × piętro na Normalnym i 4 + 10 × piętro na Trudnym. Aggro ma zasięg 1–4 pól, zależny od siły całych drużyn; ściany zasłaniają także bez mgły. Co 20 udanych kroków: 25% szansy na dodatkową zwykłą ikonę poza kwadratem 11 × 11. Limit udanych posiłków na piętro to połowa początkowych ikon; pokonane również zużywają limit.",
       "loot": "Zwycięstwo w całym zwykłym starciu daje bohaterowi 10 złota — nie za każdego wroga osobno. XP za każdego zwykłego wroga: 10 × jego poziom dla uczestnika drużyny."
     },
     {
@@ -1551,7 +1551,7 @@ globalThis.DUNGEON_DATA = {
           "effect": "Jedno działanie w fazie NPC. Trafienie uwzględnia KP celu i różnicę poziomów."
         }
       ],
-      "occurrence": "Jeden boss na piętro.",
+      "occurrence": "Jeden boss na piętro, wliczony w początkowe ikony. Na nowych piętrach od 0.26 początkowa liczba ikon spotkań (z bossem) wynosi 4 + 6 × piętro na Normalnym i 4 + 10 × piętro na Trudnym. Aggro ma zasięg 1–4 pól, zależny od siły całych drużyn; ściany zasłaniają także bez mgły.",
       "loot": "Zwycięstwo nad bossem daje bohaterowi 25 złota i otwiera dostęp do schodów. XP za bossa: 40 × jego poziom dla uczestnika drużyny."
     },
     {
@@ -1777,6 +1777,44 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.26",
+      "date": "2026-10-20",
+      "title": "Loch nie czeka bezczynnie",
+      "groups": [
+        {
+          "label": "Mniejsze pokoje, więcej spotkań",
+          "changes": [
+            "Każdy losowany bok pokoju zmniejszono o 30%: pokoje mają teraz boki od 4 do 11 pól. Wymiary pięter i cienkie korytarze pozostają bez zmian.",
+            "Początkowa liczba ikon spotkań wynosi 4 + 6 × piętro na Normalnym oraz 4 + 10 × piętro na Trudnym. Jeden boss jest wliczony; na pierwszym piętrze to odpowiednio 10 i 14 ikon, nie pojedynczych osób w grupach."
+          ]
+        },
+        {
+          "label": "Posiłki i automatyczne starcia",
+          "changes": [
+            "Co 20 udanych kroków jest 25% szansy na dodatkową zwykłą grupę. Ikona pojawia się poza całym widocznym kwadratem 11 × 11, poza pokojem startowym i zajętymi polami.",
+            "Łączna liczba udanych posiłków na piętro nie przekracza połowy liczby początkowych ikon. Pokonanie posiłku nie zwalnia limitu; brak wolnego miejsca zużywa próbę losowania.",
+            "Po wykonaniu pełnego kroku wróg może rozpocząć walkę z odległości od 1 do 4 pól. Zasięg zależy od siły całej grupy przeciwników względem całej zdolnej do walki drużyny gracza, z uwzględnieniem poziomów i wyposażenia.",
+            "Ściany blokują aggro także przy wyłączonej mgle. Najbliższa uprawniona ikona rozpoczyna jedno starcie; powrót ze zwycięstwa sam nie uruchamia kolejnego."
+          ]
+        },
+        {
+          "label": "Ruch i zapis",
+          "changes": [
+            "Zachowano marsz 0,30 s na pole, widok 11 × 11 i zapis po trasie lub rozpoczęciu walki, a nie po każdym kafelku.",
+            "Nowy format zapisu zachowuje licznik kroków, wynikowy stan losowania posiłków i kontekst wejścia w aggro. Późniejsze ogłuszenie lub utrata przytomności towarzysza nie zmieniają składu zapamiętanego przy wejściu.",
+            "Nowe zasady dotyczą nowej próby i kolejnych generowanych pięter. Rozpoczęte stare piętro pozostaje bez zmian; historia i rekord nie są resetowane."
+          ]
+        },
+        {
+          "label": "Sprawdzenie wydania",
+          "changes": [
+            "Przeszły celowane testy, uruchomienie na komputerze oraz eksport i kontrola APK. Test na fizycznym telefonie pozostaje niewykonany; pomiary komputera nie są wynikiem płynności Androida."
+          ]
+        }
+      ],
+      "note": "Po zapisaniu formatu 6 nie wracaj do 0.25. Generator ma skończoną pojemność: jeśli zabraknie miejsca na wymaganą liczbę ikon, pokaże błąd i zachowa bieżącą próbę. Balans jest roboczy; pięciu koncepcyjnych wrogów nadal nie dodano do gry."
+    },
     {
       "version": "0.25",
       "date": "2026-10-20",
