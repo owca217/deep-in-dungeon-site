@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.29",
+    "version": "0.31",
     "updated": "2026-10-20"
   },
   "download": {
-    "version": "0.29",
+    "version": "0.31",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.29-arm64-public.apk",
-    "sizeBytes": 51321582,
-    "sha256": "329db59ed556b8851ac0e59b231678d9cf052bf164e717bc63631942354e80fb",
+    "fileName": "DeepInDungeon-0.31-arm64-public.apk",
+    "sizeBytes": 51280569,
+    "sha256": "f046b903aa68803dc00c275e6c87062967adb765557ef9b5e873f59f1d88aadb",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,66 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.31",
+      "date": "2026-10-20",
+      "title": "Jasne mury widziane z góry",
+      "groups": [
+        {
+          "label": "Nowy wygląd ścian",
+          "changes": [
+            "Ściany korzystają z 36 nowych grafik: sześciu kształtów po sześć wariantów. Jasny, ciepły kamień jest pokazany prostopadle z góry i kontrastuje z ciemnym otoczeniem.",
+            "Nowa pula zastępuje tylko grafiki murów. Pozostają te same 24 warianty podłóg oraz dotychczasowe schody, skrzynie, łupy i postacie.",
+            "Kształty nadal wynikają z konturu pomieszczenia. Zachowano kierunki prostych odcinków, narożników i rozgałęzień T; nowy wklęsły narożnik przedstawia masę kamienia z wycięciem na podłogę."
+          ]
+        },
+        {
+          "label": "Ta sama wyprawa",
+          "changes": [
+            "Nowy wygląd pojawia się także po wybraniu Kontynuuj. Nie zmienia geometrii piętra, zasad, ruchu 0,30 s ani formatu zapisu 6; nie resetuje postępu.",
+            "Wariant pozostaje stały dla tego samego piętra i pola, także po zawróceniu lub wczytaniu. Wybór grafiki nie zużywa losowania walki, łupów ani posiłków.",
+            "Grafiki są ładowane przed pierwszym ruchem; zachowano pamięć podręczną i ponowne używanie kafelków podczas marszu."
+          ]
+        },
+        {
+          "label": "Ograniczenia",
+          "changes": [
+            "Test na fizycznym telefonie pozostaje niewykonany. Nie potwierdzono płynności Androida ani idealnego połączenia pikseli wszystkich wygenerowanych wariantów."
+          ]
+        }
+      ],
+      "note": "Aktualizacja samych grafik ścian. Nowe piętra zachowują układ 50 × 50 z wydania 0.30, a rozpoczęta próba pozostaje zachowana."
+    },
+    {
+      "version": "0.30",
+      "date": "2026-10-20",
+      "title": "Pokoje bliżej siebie",
+      "groups": [
+        {
+          "label": "Kompaktowe piętra",
+          "changes": [
+            "Nowe próby i kolejne generowane piętra mają 50 × 50 pól, zarówno na Normalnym, jak i Trudnym. Pozostaje 14 pokojów różnych rozmiarów.",
+            "Cały korytarz poza pokojami ma najwyżej 4 pola. Generator rozmieszcza pokoje blisko siebie, zachowując połączenie lochu; krótkie odcinki nie sklejają się w długi tunel.",
+            "W konfiguracji próby stała informacja 50 × 50 zastępuje wybór trzech rozmiarów. Trudność i liczba skrzyń nadal są wybierane osobno."
+          ]
+        },
+        {
+          "label": "Dotychczasowa wyprawa",
+          "changes": [
+            "Aktualnie zapisane piętro nie jest zmniejszane ani przeliczane. Po udanym zejściu następne piętro będzie kompaktowe; postacie i wyposażenie pozostają.",
+            "Nie zmieniono wzoru liczby przeciwników, aggro, łupów, widoku 11 × 11 ani tempa ruchu 0,30 s. Na mniejszej mapie jest gęściej, a miejsce może skończyć się wcześniej. Brak miejsca nie obcina liczby wrogów ani nie usuwa dotychczasowego piętra."
+          ]
+        },
+        {
+          "label": "Sprawdzenie",
+          "changes": [
+            "Sprawdzono 1000 układów, limit całych korytarzy, dostępność pokojów, powtarzalność i odczyt starego oraz nowego zapisu. Testy przeszły również na skompilowanych zasobach APK i w rendererze komputera.",
+            "Test fizycznego telefonu pozostaje niewykonany. Nie deklarujemy pomiarów płynności Androida."
+          ]
+        }
+      ],
+      "note": "Zmiana geometrii nowych pięter, bez resetu aktualnej próby. Nie wracaj do starszego APK po zapisaniu nowego piętra."
+    },
     {
       "version": "0.29",
       "date": "2026-10-20",
