@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.33",
+    "version": "0.34",
     "updated": "2026-10-21"
   },
   "download": {
-    "version": "0.33",
+    "version": "0.34",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.33-arm64-public.apk",
+    "fileName": "DeepInDungeon-0.34-arm64-public.apk",
     "sizeBytes": 51284484,
-    "sha256": "4fab3f348b9fad681e1df91661e9f87814806b270246eee46df4d2cd41fb5d1c",
+    "sha256": "418b214d14434d9ff4aa806222776b7874372787068867eab3f652867d88c2a2",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,28 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.34",
+      "date": "2026-10-21",
+      "title": "Szczegóły postaci od razu",
+      "groups": [
+        {
+          "label": "Krótsza droga do informacji",
+          "changes": [
+            "Dotknięcie postaci na polu walki otwiera od razu szczegóły właśnie tej postaci. Pominięto pośrednią listę obu drużyn.",
+            "Zamknij albo Wstecz wraca bezpośrednio do ekranu bitwy."
+          ]
+        },
+        {
+          "label": "Zachowane działanie",
+          "changes": [
+            "Szczegóły przeciwników nadal pokazują wyłącznie dotychczas dostępne informacje. Zachowano wybór celu i rozmowy z towarzyszami.",
+            "Reguły walki, rozpoczęte próby, historia i rekord pozostają. Format zapisu 6 nie wymaga resetowania danych."
+          ]
+        }
+      ],
+      "note": "Dotknięcie otwiera szczegóły konkretnej postaci bez dodatkowej listy. Zasady i zapis pozostają zachowane."
+    },
     {
       "version": "0.33",
       "date": "2026-10-21",
