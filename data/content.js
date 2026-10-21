@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.34",
-    "updated": "2026-10-21"
+    "version": "0.35",
+    "updated": "2026-10-22"
   },
   "download": {
-    "version": "0.34",
+    "version": "0.35",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.34-arm64-public.apk",
-    "sizeBytes": 51284484,
-    "sha256": "418b214d14434d9ff4aa806222776b7874372787068867eab3f652867d88c2a2",
+    "fileName": "DeepInDungeon-0.35-arm64-public.apk",
+    "sizeBytes": 51288580,
+    "sha256": "d4f1a26662ca02d5e6b60360be9acbc8092971e9136b526b417d3ee72b4ab838",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,37 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.35",
+      "date": "2026-10-22",
+      "title": "Auto i wygodniejsza ręka kart",
+      "groups": [
+        {
+          "label": "Karty i plecak pod ręką",
+          "changes": [
+            "Rozwinięta ręka kart jest wyświetlana przed postaciami. Dotknięcie karty trafia w kartę, także gdy pod nią znajduje się figura.",
+            "Przycisk plecaka nad talią przesunięto nieco wyżej. Obok niego oraz w nagłówku ręki znajduje się przycisk Auto."
+          ]
+        },
+        {
+          "label": "Automatyczne tury bohatera",
+          "changes": [
+            "Auto jest domyślnie wyłączone i przygaszone. Po dotknięciu staje się kolorowe i rozgrywa kolejne tury bohatera aż do końca walki lub wyłączenia.",
+            "Co 0,4 sekundy wybiera dostępne zagranie według dotychczasowych zasad decyzji towarzyszy. Korzysta z kart bohatera, bez zużywania mikstur.",
+            "Gdy nie ma dostępnego zagrania, kończy turę. Zachowano dotychczasowy pokaz działań NPC; po nim Auto podejmuje następną turę bohatera. Ponowne dotknięcie wyłącza Auto także podczas pokazu NPC."
+          ]
+        },
+        {
+          "label": "Powrót do ręcznego sterowania",
+          "changes": [
+            "Auto wyłącza się po wyniku walki, opuszczeniu walki, przejściu do menu, przejściu aplikacji w tło albo błędzie zapisu.",
+            "Kontynuuj przywraca walkę z wyłączonym Auto. Ustawienie nie jest zapisywane na przyszłość; format zapisu 6, rozpoczęte próby, historia i rekord pozostają bez resetowania.",
+            "Test na fizycznym telefonie pozostaje niewykonany."
+          ]
+        }
+      ],
+      "note": "Opcjonalne Auto rozgrywa kolejne tury bohatera. Ręka kart pozostaje przed postaciami, a rozpoczęte próby nie wymagają resetowania."
+    },
     {
       "version": "0.34",
       "date": "2026-10-21",
