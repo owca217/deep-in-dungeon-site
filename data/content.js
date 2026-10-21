@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.31",
+    "version": "0.33",
     "updated": "2026-10-21"
   },
   "download": {
-    "version": "0.31",
+    "version": "0.33",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.31-arm64-public.apk",
-    "sizeBytes": 51280569,
-    "sha256": "f046b903aa68803dc00c275e6c87062967adb765557ef9b5e873f59f1d88aadb",
+    "fileName": "DeepInDungeon-0.33-arm64-public.apk",
+    "sizeBytes": 51284484,
+    "sha256": "4fab3f348b9fad681e1df91661e9f87814806b270246eee46df4d2cd41fb5d1c",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,69 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.33",
+      "date": "2026-10-21",
+      "title": "Nowy widok walki",
+      "groups": [
+        {
+          "label": "Postacie w centrum",
+          "changes": [
+            "Środek ekranu zajmują postacie obu drużyn. Po każdej stronie mieści się do ośmiu uczestników, w dwóch rzędach po najwyżej cztery postacie.",
+            "Nazwy i paski zdrowia znajdują się nad głowami. Wskazanie celu, informacje o postaci, rozmowy z towarzyszami i ich dymki pozostają dostępne."
+          ]
+        },
+        {
+          "label": "Informacje pod ręką",
+          "changes": [
+            "Przycisk Dziennik zastępuje Tempo. Dziennik jest domyślnie zamknięty; po otwarciu pokazuje do pięciu ostatnich zdarzeń, od najnowszego.",
+            "Usunięto regulację tempa. Działania NPC są odtwarzane w stałym tempie 0,4 s na zdarzenie.",
+            "Klasa pancerza bohatera jest widoczna w górnym pasku informacji zamiast na osobnej karcie w widoku. Przycisk plecaka ma ikonę."
+          ]
+        },
+        {
+          "label": "Ta sama wyprawa",
+          "changes": [
+            "Zmienia się rozmieszczenie elementów ekranu walki. Zasady, karty, wyposażenie i dotychczasowe możliwości rozmów pozostają zachowane.",
+            "Rozpoczęte próby, historia i rekord pozostają. Zachowano format zapisu 6 bez resetowania danych.",
+            "Test na fizycznym telefonie pozostaje niewykonany."
+          ]
+        }
+      ],
+      "note": "Nowy wygląd walki i ukryty pod przyciskiem dziennik. Bez zmiany zasad ani resetowania wyprawy."
+    },
+    {
+      "version": "0.32",
+      "date": "2026-10-21",
+      "title": "Wybierz towarzysza wyprawy",
+      "groups": [
+        {
+          "label": "Prostszy początek",
+          "changes": [
+            "W oknie Nowa próba wybierasz poziom Normalny lub Trudny oraz jednego towarzysza: Wojownika, Łucznika, Maga, Łotrzyka albo Kleryka. Towarzysza wskazujesz samodzielnie; domyślnie wybrane są Normalny i Kleryk.",
+            "Okno zawiera tylko te dwa wybory oraz przyciski Start i Anuluj. Usunięto wprowadzenie, opisy oraz ustawienia rozmiaru piętra i liczby skrzyń.",
+            "Nowe próby mają stałe cztery skrzynie na piętro. Układ 50 × 50, liczba pokojów i krótkie korytarze pozostają zgodne z poprzednią wersją."
+          ]
+        },
+        {
+          "label": "Sprzęt na początek",
+          "changes": [
+            "Wojownik zaczyna z Przysięgą Wdowca, Łucznik z Zaćmieniem Łowcy, a Łotrzyk ze Sztyletem.",
+            "Mag ma Kostur opiekuna i Odłamek żaru w lewym miejscu artefaktu. Kleryk zaczyna z Kosturem opiekuna.",
+            "To istniejące przedmioty i ich dotychczasowe karty. Wybór roli określa wyposażenie początkowe, ale nie blokuje późniejszej wymiany sprzętu; towarzysz nadal korzysta z obecnych decyzji i rozmów."
+          ]
+        },
+        {
+          "label": "Rozpoczęta wyprawa",
+          "changes": [
+            "Kontynuuj zachowuje dotychczasową drużynę, wyposażenie, ustawienia skrzyń i postęp. Nie dodaje ani nie podmienia towarzysza w zapisanej próbie.",
+            "Pula neutralnych postaci spotykanych na mapie pozostaje bez zmian. Zachowano format zapisu 6, historię i rekord, bez resetowania danych.",
+            "Test na fizycznym telefonie pozostaje niewykonany."
+          ]
+        }
+      ],
+      "note": "Wybór towarzysza i stałe cztery skrzynie dotyczą nowych prób. Istniejące zapisy pozostają zachowane."
+    },
     {
       "version": "0.31",
       "date": "2026-10-20",
