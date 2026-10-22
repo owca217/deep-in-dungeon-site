@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.36",
+    "version": "0.37",
     "updated": "2026-10-22"
   },
   "download": {
-    "version": "0.36",
+    "version": "0.37",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.36-arm64-public.apk",
-    "sizeBytes": 51288580,
-    "sha256": "4e0f42a7e2cee2bb622ad51ae4ff574dc9974f21c86fdb29b7ce98b53bd6679c",
+    "fileName": "DeepInDungeon-0.37-arm64-public.apk",
+    "sizeBytes": 51284681,
+    "sha256": "55f4c444eca0f9169fd91b1691a120a66fdbb681ce24c89bebc1900c9d3e8a31",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1522,7 +1522,7 @@ globalThis.DUNGEON_DATA = {
           "effect": "Jedno działanie w fazie NPC. Trafienie uwzględnia KP celu i różnicę poziomów."
         }
       ],
-      "occurrence": "W jednej grupie: 2 wrogów na piętrach 1–2, 3 na 3–4, potem co dwa piętra o jednego więcej, do 8. Na nowych piętrach od 0.26 początkowa liczba ikon spotkań (z bossem) wynosi 4 + 6 × piętro na Normalnym i 4 + 10 × piętro na Trudnym. Aggro ma zasięg 1–4 pól, zależny od siły całych drużyn; ściany zasłaniają także bez mgły. Co 20 udanych kroków: 25% szansy na dodatkową zwykłą ikonę poza kwadratem 11 × 11. Limit udanych posiłków na piętro to połowa początkowych ikon; pokonane również zużywają limit.",
+      "occurrence": "W jednej grupie: 2 wrogów na piętrach 1–2, 3 na 3–4, potem co dwa piętra o jednego więcej, do 8. Na nowych piętrach od 0.26 początkowa liczba ikon spotkań (z bossem) wynosi 4 + 6 × piętro na Normalnym i 4 + 10 × piętro na Trudnym. Aggro ma zasięg 1–4 pól, zależny od siły całych drużyn; ściany blokują wykrycie przez aggro. Co 20 udanych kroków: 25% szansy na dodatkową zwykłą ikonę poza kwadratem 11 × 11. Limit udanych posiłków na piętro to połowa początkowych ikon; pokonane również zużywają limit.",
       "loot": "Zwycięstwo w całym zwykłym starciu daje bohaterowi 10 złota — nie za każdego wroga osobno. XP za każdego zwykłego wroga: 10 × jego poziom dla uczestnika drużyny."
     },
     {
@@ -1560,7 +1560,7 @@ globalThis.DUNGEON_DATA = {
           "effect": "Jedno działanie w fazie NPC. Trafienie uwzględnia KP celu i różnicę poziomów."
         }
       ],
-      "occurrence": "Jeden boss na piętro, wliczony w początkowe ikony. Na nowych piętrach od 0.26 początkowa liczba ikon spotkań (z bossem) wynosi 4 + 6 × piętro na Normalnym i 4 + 10 × piętro na Trudnym. Aggro ma zasięg 1–4 pól, zależny od siły całych drużyn; ściany zasłaniają także bez mgły.",
+      "occurrence": "Jeden boss na piętro, wliczony w początkowe ikony. Na nowych piętrach od 0.26 początkowa liczba ikon spotkań (z bossem) wynosi 4 + 6 × piętro na Normalnym i 4 + 10 × piętro na Trudnym. Aggro ma zasięg 1–4 pól, zależny od siły całych drużyn; ściany blokują wykrycie przez aggro.",
       "loot": "Zwycięstwo nad bossem daje bohaterowi 25 złota i otwiera dostęp do schodów. XP za bossa: 40 × jego poziom dla uczestnika drużyny."
     },
     {
@@ -1786,6 +1786,28 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.37",
+      "date": "2026-10-22",
+      "title": "Lochy bez mgły",
+      "groups": [
+        {
+          "label": "Cały teren od początku",
+          "changes": [
+            "Usunięto mgłę, zaciemnienie terenu i stopniowe odkrywanie mapy. Cały teren piętra jest dostępny od początku także w podglądzie mapy.",
+            "W menu nie ma już przełącznika mgły. Widok wokół bohatera zachowuje kadr 11 × 11 pól."
+          ]
+        },
+        {
+          "label": "Zachowana wyprawa",
+          "changes": [
+            "Rozpoczęte próby wczytują się z pełną widocznością terenu. Zachowano format zapisu 6 i dotychczasowy postęp, bez resetowania danych.",
+            "Ściany, ruch i aggro zachowują dotychczasowe działanie. Zmiana widoczności terenu nie dodaje nowych zasad walki ani treści."
+          ]
+        }
+      ],
+      "note": "Pełny teren piętra od początku, także w podglądzie mapy. Kadr 11 × 11, rozpoczęte próby i zasady walki pozostają."
+    },
     {
       "version": "0.36",
       "date": "2026-10-22",
