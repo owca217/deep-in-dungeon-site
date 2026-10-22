@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.35",
+    "version": "0.36",
     "updated": "2026-10-22"
   },
   "download": {
-    "version": "0.35",
+    "version": "0.36",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.35-arm64-public.apk",
+    "fileName": "DeepInDungeon-0.36-arm64-public.apk",
     "sizeBytes": 51288580,
-    "sha256": "d4f1a26662ca02d5e6b60360be9acbc8092971e9136b526b417d3ee72b4ab838",
+    "sha256": "4e0f42a7e2cee2bb622ad51ae4ff574dc9974f21c86fdb29b7ce98b53bd6679c",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,36 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.36",
+      "date": "2026-10-22",
+      "title": "Więcej miejsca na walkę",
+      "groups": [
+        {
+          "label": "Informacje przy talii",
+          "changes": [
+            "Imię, zdrowie z paskiem, bariera, siła, energia i KP bohatera znajdują się w zwartym panelu na prawo od talii.",
+            "Po otwarciu ręki karty nie zasłaniają dostępu do wartości bohatera: zdrowie, energia, bariera, siła i KP są widoczne także w jej nagłówku.",
+            "Przesunięto komunikat walki i podpis pomieszczenia. Pole z postaciami sięga wyżej i ma więcej miejsca, a figury pozostają na podłodze areny."
+          ]
+        },
+        {
+          "label": "Czytelniejszy układ postaci",
+          "changes": [
+            "Każda drużyna od trzech osób jest wyświetlana w zygzaku: kolejne postacie od lewej do prawej znajdują się naprzemiennie niżej i wyżej. Jedna lub dwie postacie pozostają w poziomej linii.",
+            "Imiona, paski zdrowia i obszary dotyku poszczególnych postaci są rozdzielone. Rozmiar figur dopasowuje się także do krótkiego ekranu."
+          ]
+        },
+        {
+          "label": "Ta sama walka i wyprawa",
+          "changes": [
+            "To zmiana rozmieszczenia elementów ekranu. Auto z wersji 0.35, ręka kart przed postaciami, wybór celu i szczegóły postaci pozostają dostępne.",
+            "Reguły, karty, przedmioty i format zapisu 6 pozostają bez zmian. Rozpoczęte próby, historia i rekord nie wymagają resetowania."
+          ]
+        }
+      ],
+      "note": "Panel bohatera przy talii i zygzak postaci zwalniają miejsce na ekranie walki. Zmiana układu nie dodaje nowych zasad."
+    },
     {
       "version": "0.35",
       "date": "2026-10-22",
