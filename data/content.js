@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.38",
+    "version": "0.39",
     "updated": "2026-10-23"
   },
   "download": {
-    "version": "0.38",
+    "version": "0.39",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.38-arm64-public.apk",
-    "sizeBytes": 51288777,
-    "sha256": "ff9645b249b60d36e0d4751cb6b45c6f68a71823eb5d4cfdd3e9eea658103d7d",
+    "fileName": "DeepInDungeon-0.39-arm64-public.apk",
+    "sizeBytes": 51301238,
+    "sha256": "2021a6b97b321fa757c60d2a783860da207db5ab301d23fa220cd85d27ef9b91",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,36 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.39",
+      "date": "2026-10-23",
+      "title": "Gra dopasowana do całego ekranu",
+      "groups": [
+        {
+          "label": "Pion, poziom i proporcje pośrednie",
+          "changes": [
+            "Menu, mapa, walka, ręka kart, ekwipunek i okna dopasowują układ do dostępnej szerokości i wysokości. Na szerokim ekranie panele znajdują się obok pola gry; na wąskim zachowują układ pionowy.",
+            "Pion 9:16 pozostaje wzorcem wyglądu. Układ obejmuje proporcje 9:16, 9:18, 9:19, 9:19,5, 9:20, 9:21, 9:22, 3:4, 2:3, 5:8, 1:1, 4:3, 16:10, 16:9 i 21:9 oraz płynne dopasowanie pomiędzy nimi.",
+            "Postacie, przedmioty i pozostałe ilustracje zachowują proporcje. Listy można przewijać, a przyciski i panele uwzględniają bezpieczny obszar ekranu."
+          ]
+        },
+        {
+          "label": "Więcej miejsca w przeglądarce i na Androidzie",
+          "changes": [
+            "Wersja przeglądarkowa wypełnia dostępne okno zamiast pozostawać w wąskiej ramce 9:16. Przycisk Pełny ekran udostępnia dodatkowe miejsce, jeśli przeglądarka pozwala włączyć ten tryb.",
+            "Android dopuszcza automatyczny obrót gry wraz z urządzeniem. Układ uwzględnia bezpieczny obszar przy krawędziach i wycięciach ekranu."
+          ]
+        },
+        {
+          "label": "Ta sama wyprawa",
+          "changes": [
+            "Mapa zachowuje kadr 11 × 11 pól, a okno informacji o postaci nadal nie przyciemnia walki.",
+            "Reguły, treści i format zapisu 6 pozostają bez zmian. Rozpoczęte próby, historia i rekord nie wymagają resetowania."
+          ]
+        }
+      ],
+      "note": "Elastyczny układ całej gry w pionie i poziomie. Wersja pozostaje prototypem; obrót i bezpieczne obszary nie zostały sprawdzone na fizycznym telefonie."
+    },
     {
       "version": "0.38",
       "date": "2026-10-23",
