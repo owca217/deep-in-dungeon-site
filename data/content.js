@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.37",
-    "updated": "2026-10-22"
+    "version": "0.38",
+    "updated": "2026-10-23"
   },
   "download": {
-    "version": "0.37",
+    "version": "0.38",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.37-arm64-public.apk",
-    "sizeBytes": 51284681,
-    "sha256": "55f4c444eca0f9169fd91b1691a120a66fdbb681ce24c89bebc1900c9d3e8a31",
+    "fileName": "DeepInDungeon-0.38-arm64-public.apk",
+    "sizeBytes": 51288777,
+    "sha256": "ff9645b249b60d36e0d4751cb6b45c6f68a71823eb5d4cfdd3e9eea658103d7d",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,28 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.38",
+      "date": "2026-10-23",
+      "title": "Zwarte okno informacji o postaci",
+      "groups": [
+        {
+          "label": "Szczegóły nad polem walki",
+          "changes": [
+            "Dotknięcie sojusznika lub przeciwnika otwiera wyśrodkowane okno informacji bez przyciemniania pola walki. Jego wysokość dopasowuje się do treści, a dłuższe opisy można przewijać.",
+            "Przycisk rozmowy z towarzyszem znajduje się w nagłówku okna. Zamknij i Wstecz nadal wracają do walki."
+          ]
+        },
+        {
+          "label": "Zachowane działanie walki",
+          "changes": [
+            "Podgląd nie zmienia wybranego celu. Dostępne informacje o sojusznikach i przeciwnikach oraz rozmowy zachowują dotychczasowe zasady.",
+            "Reguły walki i format zapisu 6 pozostają bez zmian. Rozpoczęte próby, historia i rekord nie wymagają resetowania."
+          ]
+        }
+      ],
+      "note": "Informacje o dotkniętej postaci mieszczą się w zwartym oknie dopasowanym do treści. Długie szczegóły pozostają dostępne przez przewijanie."
+    },
     {
       "version": "0.37",
       "date": "2026-10-22",
