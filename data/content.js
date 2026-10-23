@@ -2,15 +2,15 @@
 globalThis.DUNGEON_DATA = {
   "meta": {
     "title": "Deep in Dungeon",
-    "version": "0.39",
-    "updated": "2026-10-23"
+    "version": "0.40",
+    "updated": "2026-10-24"
   },
   "download": {
-    "version": "0.39",
+    "version": "0.40",
     "url": "https://drive.google.com/file/d/1t2nUJJ4c2rpaMW-o2E0j4mSwMvW_7srR/view",
-    "fileName": "DeepInDungeon-0.39-arm64-public.apk",
-    "sizeBytes": 51301238,
-    "sha256": "2021a6b97b321fa757c60d2a783860da207db5ab301d23fa220cd85d27ef9b91",
+    "fileName": "DeepInDungeon-0.40-arm64-public.apk",
+    "sizeBytes": 51305334,
+    "sha256": "51b1c9a1229396a565fbadfc6b92ba1ce4fd106d87d6cf0aeb4ba9633cf0b8d8",
     "androidMinimum": "7.0",
     "architecture": "arm64-v8a"
   },
@@ -1786,6 +1786,28 @@ globalThis.DUNGEON_DATA = {
     }
   ],
   "releases": [
+    {
+      "version": "0.40",
+      "date": "2026-10-24",
+      "title": "Jednakowa skala postaci obu drużyn",
+      "groups": [
+        {
+          "label": "Wspólny rozmiar na arenie",
+          "changes": [
+            "Obie drużyny używają skali postaci dobranej do liczniejszej strony. Przy trzech sojusznikach i dwóch przeciwnikach figury obu stron mają skalę drużyny trzyosobowej.",
+            "Przy równej liczbie postaci rozmiar pozostaje dotychczasowy. Zachowano formacje, imiona, paski zdrowia i obsługę dotknięć postaci."
+          ]
+        },
+        {
+          "label": "Ta sama walka i zapis",
+          "changes": [
+            "Dopasowanie do pionowego i poziomego ekranu pozostaje dostępne. Zmiana skali nie dodaje nowych reguł walki ani treści.",
+            "Format zapisu 6, rozpoczęte próby, historia i rekord pozostają bez zmian i nie wymagają resetowania."
+          ]
+        }
+      ],
+      "note": "Liczniejsza drużyna wyznacza wspólną skalę figur po obu stronach areny. Przy równych składach wygląd pozostaje bez zmian."
+    },
     {
       "version": "0.39",
       "date": "2026-10-23",
